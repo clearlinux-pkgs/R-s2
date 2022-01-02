@@ -4,7 +4,7 @@
 #
 Name     : R-s2
 Version  : 1.0.7
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/s2_1.0.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/s2_1.0.7.tar.gz
 Summary  : Spherical Geometry Operators Using the S2 Geometry Library
@@ -41,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1638705069
+export SOURCE_DATE_EPOCH=1641118270
 
 %install
-export SOURCE_DATE_EPOCH=1638705069
+export SOURCE_DATE_EPOCH=1641118270
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -135,4 +135,5 @@ R CMD check --no-manual --no-examples --no-codoc s2 || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/s2/libs/s2.so
+/usr/lib64/R/library/s2/libs/s2.so.avx2
 /usr/lib64/R/library/s2/libs/s2.so.avx512
