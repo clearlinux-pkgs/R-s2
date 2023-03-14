@@ -4,7 +4,7 @@
 #
 Name     : R-s2
 Version  : 1.1.2
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/s2_1.1.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/s2_1.1.2.tar.gz
 Summary  : Spherical Geometry Operators Using the S2 Geometry Library
@@ -17,9 +17,6 @@ BuildRequires : R-Rcpp
 BuildRequires : R-wk
 BuildRequires : buildreq-R
 BuildRequires : openssl-dev
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 the sphere. High-performance constructors and exporters provide high compatibility
@@ -44,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1673545631
+export SOURCE_DATE_EPOCH=1678834034
 
 %install
-export SOURCE_DATE_EPOCH=1673545631
+export SOURCE_DATE_EPOCH=1678834034
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
