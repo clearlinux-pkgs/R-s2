@@ -5,7 +5,7 @@
 #
 Name     : R-s2
 Version  : 1.1.3
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/s2_1.1.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/s2_1.1.3.tar.gz
 Summary  : Spherical Geometry Operators Using the S2 Geometry Library
