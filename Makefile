@@ -1,5 +1,5 @@
 PKG_NAME := R-s2
-URL = https://cran.r-project.org/src/contrib/s2_1.1.3.tar.gz
+URL = https://cran.r-project.org/src/contrib/s2_1.1.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
